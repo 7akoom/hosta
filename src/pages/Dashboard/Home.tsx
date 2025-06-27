@@ -17,23 +17,23 @@ export default function Home() {
         <div className="col-span-12 space-y-6 xl:col-span-7">
           <EcommerceMetrics />
 
-          <MonthlySalesChart />
+          {/* <MonthlySalesChart /> */}
         </div>
 
         <div className="col-span-12 xl:col-span-5">
-          <MonthlyTarget />
+          {/* <MonthlyTarget /> */}
         </div>
 
         <div className="col-span-12">
-          <StatisticsChart />
+          {/* <StatisticsChart /> */}
         </div>
 
         <div className="col-span-12 xl:col-span-5">
-          <DemographicCard />
+          {/* <DemographicCard /> */}
         </div>
 
         <div className="col-span-12 xl:col-span-7">
-          <RecentOrders />
+          {/* <RecentOrders /> */}
         </div>
       </div>
     </>

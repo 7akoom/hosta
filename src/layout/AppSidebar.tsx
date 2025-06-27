@@ -33,65 +33,65 @@ const navItems: NavItem[] = [
     name: "Dashboard",
     subItems: [{ name: "Ecommerce", path: "/", pro: false }],
   },
-  {
-    icon: <CalenderIcon />,
-    name: "Calendar",
-    path: "/calendar",
-  },
+  // {
+  //   icon: <CalenderIcon />,
+  //   name: "Calendar",
+  //   path: "/calendar",
+  // },
   {
     icon: <UserCircleIcon />,
-    name: "UserProfile",
+    name: "Users",
     path: "/profile",
   },
-  {
-    icon: <ListIcon />,
-    name: "Forms",
-    subItems: [{ name: "FormElements", path: "/form-elements", pro: false }],
-  },
-  {
-    name: "Tables",
-    icon: <TableIcon />,
-    subItems: [{ name: "BasicTables", path: "/basic-tables", pro: false }],
-  },
-  {
-    icon: <PageIcon />,
-    name: "Pages",
-    subItems: [
-      { name: "BlankPage", path: "/blank", pro: false },
-      { name: "Error404", path: "/error-404", pro: false },
-    ],
-  },
+  // {
+  //   icon: <ListIcon />,
+  //   name: "Forms",
+  //   subItems: [{ name: "FormElements", path: "/form-elements", pro: false }],
+  // },
+  // {
+  //   name: "Tables",
+  //   icon: <TableIcon />,
+  //   subItems: [{ name: "BasicTables", path: "/basic-tables", pro: false }],
+  // },
+  // {
+  //   icon: <PageIcon />,
+  //   name: "Pages",
+  //   subItems: [
+  //     { name: "BlankPage", path: "/blank", pro: false },
+  //     { name: "Error404", path: "/error-404", pro: false },
+  //   ],
+  // },
 ];
 
 const othersItems: NavItem[] = [
-  {
-    icon: <PieChartIcon />,
-    name: "Charts",
-    subItems: [
-      { name: "LineChart", path: "/line-chart", pro: false },
-      { name: "BarChart", path: "/bar-chart", pro: false },
-    ],
-  },
-  {
-    icon: <BoxCubeIcon />,
-    name: "UIElements",
-    subItems: [
-      { name: "Alerts", path: "/alerts", pro: false },
-      { name: "Avatar", path: "/avatars", pro: false },
-      { name: "Badge", path: "/badge", pro: false },
-      { name: "Buttons", path: "/buttons", pro: false },
-      { name: "Images", path: "/images", pro: false },
-      { name: "Videos", path: "/videos", pro: false },
-    ],
-  },
-  {
-    icon: <PlugInIcon />,
-    name: "Authentication",
-    subItems: [
-      { name: "Signin", path: "/signin", pro: false },
-      { name: "Signup", path: "/signup", pro: false },
-    ],
-  },
+  // {
+  //   icon: <PieChartIcon />,
+  //   name: "Charts",
+  //   subItems: [
+  //     { name: "LineChart", path: "/line-chart", pro: false },
+  //     { name: "BarChart", path: "/bar-chart", pro: false },
+  //   ],
+  // },
+  //{
+  //   icon: <BoxCubeIcon />,
+  //   name: "UIElements",
+  //   subItems: [
+  //     { name: "Alerts", path: "/alerts", pro: false },
+  //     { name: "Avatar", path: "/avatars", pro: false },
+  //     { name: "Badge", path: "/badge", pro: false },
+  //     { name: "Buttons", path: "/buttons", pro: false },
+  //     { name: "Images", path: "/images", pro: false },
+  //     { name: "Videos", path: "/videos", pro: false },
+  //   ],
+  // },
+  // {
+  //   icon: <PlugInIcon />,
+  //   name: "Authentication",
+  //   subItems: [
+  //     { name: "Signin", path: "/signin", pro: false },
+  //     { name: "Signup", path: "/signup", pro: false },
+  //   ],
+  // },
 ];
 
 const AppSidebar: React.FC = () => {
@@ -297,7 +297,7 @@ const AppSidebar: React.FC = () => {
             ? "w-[290px]"
             : "w-[90px]"
         }
-        ${isMobileOpen ? "translate-x-0" : "-translate-x-full"}
+        ${isMobileOpen ? "translate-x-0" : isRTL ? "translate-x-full" : "-translate-x-full"}
         lg:translate-x-0
         ${isRTL ? 'right-0 border-l border-r-0' : 'left-0 border-r border-l-0'}`}
       onMouseEnter={() => !isExpanded && setIsHovered(true)}
@@ -328,7 +328,7 @@ const AppSidebar: React.FC = () => {
             </>
           ) : (
             <img
-              src="/images/logo/logo-icon.svg"
+              src="/images/logo/light-logo-icon.svg"
               alt="Logo"
               width={32}
               height={32}
