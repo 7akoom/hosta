@@ -1,0 +1,80 @@
+{
+    "BackToDashboard": "بگەڕێوە بۆ داشبۆرد",
+    "Signin": "چوونەژوورەوە",
+    "EnterEmail": "ئیمەیڵ و وشەی نهێنی بنووسە بۆ چوونەژوورەوە!",
+    "Email": "ئیمەیڵ",
+    "EmailPlaceHolder": "ئیمەیڵەکەت بنووسە",
+    "Password": "وشەی نهێنی",
+    "PasswordPlaceHolder": "وشەی نهێنیەکەت بنووسە",
+    "ForgotPassword": "وشەی نهێنیت لەبیرچووە؟",
+    "DontHaveAccount": "هەژمارت نییە؟",
+    "AlreadyHaveAnAccount": "هەژمارت هەیە؟",
+    "Signup": "هەژمار دروستکردن",
+    "FirstName": "ناوی یەکەم",
+    "LastName": "ناوی دووەم",
+    "FirstNamePlaceHolder": "ناوی یەکەمت بنووسە",
+    "LastNamePlaceHolder": "ناوی دووەمت بنووسە",
+    "Notifications": "ئاگادارکردنەوەکان",
+    "nav": {
+        "Dashboard": "داشبۆرد",
+        "Calendar": "ڕۆژژمێر",
+        "UserProfile": "پڕۆفایلی بەکارهێنەر",
+        "Users": "کڵایەنت",
+        "Handymen": "کرێکاری لێهاتوو",
+        "Forms": "فۆرمەکان",
+        "Tables": "خشتەکان",
+        "Pages": "پەڕەکان",
+        "Statistics": "ئامار",
+        "FormElements": "ئەڵمانەکانی فۆرم",
+        "BasicTables": "خشتە سەرەکییەکان",
+        "BlankPage": "پەڕەی بەتاڵ",
+        "Error404": "هەڵەی 404",
+        "Charts": "نەخشەکان",
+        "LineChart": "نەخشەی هێڵی",
+        "BarChart": "نەخشەی ستوونی",
+        "UIElements": "ئەڵمانەکانی UI",
+        "Alerts": "ئاگادارکردنەوەکان",
+        "Avatar": "ئەڤاتارەکان",
+        "Badge": "نیشانەکان",
+        "Buttons": "دوگمەکان",
+        "Images": "وێنەکان",
+        "Videos": "ڤیدیۆکان",
+        "Authentication": "ڕاستکردنەوە",
+        "Signin": "چوونەژوورەوە",
+        "Signup": "هەژمار دروستکردن",
+        "SearchPlaceHolder": "...فەرمانی گەڕان یان نووسین"
+    },
+    "Menu": "مێنیو",
+    "Dashboard": {
+        "Customer": "کڵایەنت",
+        "Providers": "دابینکەرەکان",
+        "Orders": "داواکارییەکان"
+    },
+    "UserDropDown": {
+        "EditProfile": "دەستکاریکردنی پڕۆفایلی",
+        "AccountSettings": "ڕێکخستنەکانی ئەکاونت",
+        "Signout": "دەرچوون لە دەرەوە"
+    },
+    "Breadcrumb": {
+        "Home": "ماڵەوە",
+        "ClientsPageTitle": "کڵایەنت",
+        "HandymenPageTitle": "پێشکەشکارانی خزمەتگوزاری"
+    },
+    "Card": {
+        "ClientsCardTitle": "لیستی کڵایەنت",
+        "HandymenCardTitle": "لیستی پێشکەشکارانی خزمەتگوزاری"
+    },
+    "Table": {
+        "Client": "کڵایەنت",
+        "Info": "زانیاری",
+        "Actions": "کردارەکان",
+        "Block": "بلۆک",
+        "Activate": "چالاک بکە",
+        "Delete": "سڕینەوە",
+        "Edit": "بژارکردن",
+        "Email": "ئیمەیڵ",
+        "Phone": "تەلەفۆن",
+        "Address": "ناونیشان",
+        "Status": "دۆخ"
+    }
+}

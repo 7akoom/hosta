@@ -14,15 +14,17 @@
     "LastName": "Last Name",
     "FirstNamePlaceHolder": "Enter your first name",
     "LastNamePlaceHolder": "Enter your last name",
+    "Notifications": "Notifications",
     "nav": {
         "Dashboard": "Dashboard",
         "Calendar": "Calendar",
         "UserProfile": "User Profile",
-        "Users": "Users",
+        "Users": "Clients",
+        "Handymen": "Handymen",
         "Forms": "Forms",
         "Tables": "Tables",
         "Pages": "Pages",
-        "Ecommerce": "Ecommerce",
+        "Statistics": "Statistics",
         "FormElements": "Form Elements",
         "BasicTables": "Basic Tables",
         "BlankPage": "Blank Page",
@@ -39,8 +41,41 @@
         "Videos": "Videos",
         "Authentication": "Authentication",
         "Signin": "Sign in",
-        "Signup": "Sign up"
+        "Signup": "Sign up",
+        "SearchPlaceHolder": "Search or type command..."
     },
     "Menu": "MENU",
-    "Others": "OTHERS"
+    "Others": "OTHERS",
+    "Dashboard": {
+        "Customer": "Clients",
+        "Providers": "Handymen",
+        "Orders": "Orders"
+    },
+    "UserDropDown": {
+        "EditProfile": "Edit profile",
+        "AccountSettings": "Account settings",
+        "Signout": "Sign out"
+    },
+    "Breadcrumb": {
+        "Home": "Home",
+        "ClientsPageTitle": "Clients",
+        "HandymenPageTitle": "Handymen"
+    },
+    "Card": {
+        "ClientsCardTitle": "Clients list",
+        "HandymenCardTitle": "Handymen list"
+    },
+    "Table": {
+        "Client": "Client",
+        "Info": "Information",
+        "Actions": "Actions",
+        "Block": "Block",
+        "Activate": "Activate",
+        "Delete": "Delete",
+        "Edit": "Edit",
+        "Email": "Email",
+        "Phone": "Phone",
+        "Address": "Address",
+        "Status": "Status"
+    }
 }

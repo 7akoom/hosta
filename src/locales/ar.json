@@ -14,15 +14,17 @@
     "LastName": "الكنية",
     "FirstNamePlaceHolder": "أدخل الاسم",
     "LastNamePlaceHolder": "أدخل الكنية",
+    "Notifications": "الإشعارات",
     "nav": {
         "Dashboard": "لوحة التحكم",
         "Calendar": "التقويم",
         "UserProfile": "الملف الشخصي",
-        "Users": "المستخدمين",
+        "Users": "العملاء",
+        "Handymen": "مزودي الخدمات",
         "Forms": "النماذج",
         "Tables": "الجداول",
         "Pages": "الصفحات",
-        "Ecommerce": "المتجر",
+        "Statistics": "الإحصائيات",
         "FormElements": "عناصر النموذج",
         "BasicTables": "الجداول الأساسية",
         "BlankPage": "صفحة فارغة",
@@ -39,8 +41,41 @@
         "Videos": "الفيديوهات",
         "Authentication": "المصادقة",
         "Signin": "تسجيل الدخول",
-        "Signup": "تسجيل الخروج"
+        "Signup": "تسجيل الخروج",
+        "SearchPlaceHolder": "ابحث أو اكتب الأمر..."
     },
     "Menu": "القائمة",
-    "Others": "أخرى"
+    "Others": "أخرى",
+    "Dashboard": {
+        "Customer": "العملاء",
+        "Providers": "مزودي الخدمات",
+        "Orders": "الطلبات"
+    },
+    "UserDropDown": {
+        "EditProfile": "تعديل الملف الشخصي",
+        "AccountSettings": "إعدادات الحساب",
+        "Signout": "تسجيل الخروج"
+    },
+    "Breadcrumb": {
+        "Home": "الرئيسية",
+        "ClientsPageTitle": "العملاء",
+        "HandymenPageTitle": "مزودي الخدمات"
+    },
+    "Card": {
+        "ClientsCardTitle": "قائمة العملاء",
+        "HandymenCardTitle": "قائمة مزودي الخدمات"
+    },
+    "Table": {
+        "Client": "العميل",
+        "Info": "المعلومات",
+        "Actions": "العمليات",
+        "Block": "حظر",
+        "Activate": "تفعيل",
+        "Delete": "حذف",
+        "Edit": "تعديل",
+        "Email": "البريد الإلكتروني",
+        "Phone": "رقم الهاتف",
+        "Address": "العنوان",
+        "Status": "الحالة"
+    }
 }

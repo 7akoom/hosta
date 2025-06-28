@@ -12,6 +12,7 @@ interface Language {
 const languages: Language[] = [
   { code: "en", label: "English", dir: "ltr" },
   { code: "ar", label: "العربية", dir: "rtl" },
+  { code: "ku", label: "کوردی", dir: "rtl" },
 ];
 
 const LanguageSwitcher: React.FC = () => {

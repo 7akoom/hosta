@@ -18,11 +18,13 @@ export const DirectionProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const setDirection = (dir: Direction) => {
     setDirectionState(dir);
     document.documentElement.dir = dir;
-    document.documentElement.lang = dir === 'rtl' ? 'ar' : 'en';
   };
 
   useEffect(() => {
-    const newDirection = i18n.dir() as Direction;
+    // Manually detect RTL languages
+    const currentLang = i18n.language;
+    const rtlLanguages = ['ar', 'ku']; // Add Kurdish to RTL languages
+    const newDirection = rtlLanguages.includes(currentLang) ? 'rtl' : 'ltr';
     setDirection(newDirection);
   }, [i18n.language]);
 
@@ -43,4 +45,4 @@ export const useDirection = () => {
     throw new Error('useDirection must be used within a DirectionProvider');
   }
   return context;
-}; 
+};
