@@ -22,6 +22,9 @@ import Home from "./pages/Dashboard/Home";
 import { DirectionProvider } from "./context/DirectionContext";
 import ClientsIndex from './pages/Clients/ClientsIndex';
 import HandymenIndex from './pages/Handymen/HandymenIndex';
+import CategoriesIndex from './pages/Categories/CategoriesIndex';
+import ServicesIndex from './pages/Services/ServicesIndex';
+import AdminsIndex from './pages/Admins/AdminsIndex';
 
 export default function App() {
   return (
@@ -35,6 +38,9 @@ export default function App() {
 
             <Route path="/clients" element={<ClientsIndex />} />
             <Route path="/handymen" element={<HandymenIndex />} />
+            <Route path="/categories" element={<CategoriesIndex />} />
+            <Route path="/services" element={<ServicesIndex />} />
+            <Route path="/admins" element={<AdminsIndex />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />

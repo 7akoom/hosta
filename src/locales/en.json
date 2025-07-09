@@ -17,10 +17,15 @@
     "Notifications": "Notifications",
     "nav": {
         "Dashboard": "Dashboard",
+        "Bookings": "Bookings",
+        "Categories": "Categories",
+        "Services": "Services",
         "Calendar": "Calendar",
         "UserProfile": "User Profile",
         "Users": "Clients",
         "Handymen": "Handymen",
+        "Admins": "Admins",
+        "Orders": "Orders",
         "Forms": "Forms",
         "Tables": "Tables",
         "Pages": "Pages",
@@ -44,8 +49,9 @@
         "Signup": "Sign up",
         "SearchPlaceHolder": "Search or type command..."
     },
-    "Menu": "MENU",
-    "Others": "OTHERS",
+    "Main": "Main",
+    "Users": "Users",
+    "Services": "Services",
     "Dashboard": {
         "Customer": "Clients",
         "Providers": "Handymen",
@@ -59,23 +65,46 @@
     "Breadcrumb": {
         "Home": "Home",
         "ClientsPageTitle": "Clients",
-        "HandymenPageTitle": "Handymen"
+        "HandymenPageTitle": "Handymen",
+        "CategoriesPageTitle": "Categories",
+        "ServicesPageTitle": "Services"
     },
     "Card": {
         "ClientsCardTitle": "Clients list",
-        "HandymenCardTitle": "Handymen list"
+        "HandymenCardTitle": "Handymen list",
+        "CategoriesCardTitle": "Categories list",
+        "ServicesCardTitle": "Services list"
     },
     "Table": {
         "Client": "Client",
+        "Handyman": "Handyman",
+        "Category": "Category",
+        "Service": "Service",
+        "Admin": "Admin",
         "Info": "Information",
+        "Role": "Role",
         "Actions": "Actions",
         "Block": "Block",
+        "Statuses":{
+            "Blocked": "Blocked",
+            "Active": "Active"
+        },
         "Activate": "Activate",
+        "Add": "Add",
         "Delete": "Delete",
         "Edit": "Edit",
+        "Show": "Show",
         "Email": "Email",
         "Phone": "Phone",
+        "JoinDate": "Joining date",
         "Address": "Address",
-        "Status": "Status"
+        "Status": "Status",
+        "BookingsCount": "Bookings count",
+        "ServicesCount": "Services count"
+    },
+    "Categories":{
+        "Cleaning": "Cleaning",
+        "Gardening": "Gardening",
+        "Painting": "Painting"
     }
 }

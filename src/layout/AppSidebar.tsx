@@ -2,23 +2,18 @@ import { useTranslation } from "react-i18next";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router";
 import { useDirection } from "../context/DirectionContext";
-
-// Assume these icons are imported from an icon library
 import {
-  BoxCubeIcon,
-  CalenderIcon,
   ChevronDownIcon,
   GridIcon,
+  GroupIcon,
   HorizontaLDots,
-  ListIcon,
-  PageIcon,
-  PieChartIcon,
-  PlugInIcon,
-  TableIcon,
-  UserCircleIcon,
+  ServiceIcon,
+  CategoryIcon,
+  HandymenIcon,
+  BookingIcon,
+  ClientIcon
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
-import SidebarWidget from "./SidebarWidget";
 
 type NavItem = {
   name: string;
@@ -31,72 +26,44 @@ const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
     name: "Dashboard",
-    subItems: [{ name: "Statistics", path: "/", pro: false }],
+    path: "/"
   },
-  // {
-  //   icon: <CalenderIcon />,
-  //   name: "Calendar",
-  //   path: "/calendar",
-  // },
   {
-    icon: <UserCircleIcon />,
+    icon: <BookingIcon />,
+    name: "Bookings",
+    path: "/bookings"
+  }
+];
+
+const servicesItems: NavItem[] = [
+  {
+    icon: <CategoryIcon />,
+    name: "Categories",
+    path: "/categories"
+  },
+  {
+    icon: <ServiceIcon />,
+    name: "Services",
+    path: "/services"
+  }
+];
+
+const usersItems: NavItem[] = [
+  {
+    icon: <ClientIcon />,
     name: "Users",
     path: "/clients",
   },
   {
-    icon: <UserCircleIcon />,
+    icon: <HandymenIcon />,
     name: "Handymen",
     path: "/handymen",
   },
-  // {
-  //   icon: <ListIcon />,
-  //   name: "Forms",
-  //   subItems: [{ name: "FormElements", path: "/form-elements", pro: false }],
-  // },
-  // {
-  //   name: "Tables",
-  //   icon: <TableIcon />,
-  //   subItems: [{ name: "BasicTables", path: "/basic-tables", pro: false }],
-  // },
-  // {
-  //   icon: <PageIcon />,
-  //   name: "Pages",
-  //   subItems: [
-  //     { name: "BlankPage", path: "/blank", pro: false },
-  //     { name: "Error404", path: "/error-404", pro: false },
-  //   ],
-  // },
-];
-
-const othersItems: NavItem[] = [
-  // {
-  //   icon: <PieChartIcon />,
-  //   name: "Charts",
-  //   subItems: [
-  //     { name: "LineChart", path: "/line-chart", pro: false },
-  //     { name: "BarChart", path: "/bar-chart", pro: false },
-  //   ],
-  // },
-  //{
-  //   icon: <BoxCubeIcon />,
-  //   name: "UIElements",
-  //   subItems: [
-  //     { name: "Alerts", path: "/alerts", pro: false },
-  //     { name: "Avatar", path: "/avatars", pro: false },
-  //     { name: "Badge", path: "/badge", pro: false },
-  //     { name: "Buttons", path: "/buttons", pro: false },
-  //     { name: "Images", path: "/images", pro: false },
-  //     { name: "Videos", path: "/videos", pro: false },
-  //   ],
-  // },
-  // {
-  //   icon: <PlugInIcon />,
-  //   name: "Authentication",
-  //   subItems: [
-  //     { name: "Signin", path: "/signin", pro: false },
-  //     { name: "Signup", path: "/signup", pro: false },
-  //   ],
-  // },
+  {
+    icon: <GroupIcon />,
+    name: "Admins",
+    path: "/admins",
+  },
 ];
 
 const AppSidebar: React.FC = () => {
@@ -105,16 +72,18 @@ const AppSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
   const location = useLocation();
 
+  type MenuType = "main" | "users" | "services";
+
   const [openSubmenu, setOpenSubmenu] = useState<{
-    type: "main" | "others";
+    type: MenuType;
     index: number;
   } | null>(null);
+
   const [subMenuHeight, setSubMenuHeight] = useState<Record<string, number>>(
     {}
   );
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
-  // const isActive = (path: string) => location.pathname === path;
   const isActive = useCallback(
     (path: string) => location.pathname === path,
     [location.pathname]
@@ -122,16 +91,21 @@ const AppSidebar: React.FC = () => {
 
   useEffect(() => {
     let submenuMatched = false;
-    ["main", "others"].forEach((menuType) => {
-      const items = menuType === "main" ? navItems : othersItems;
+    (["main", "users", "services"] as MenuType[]).forEach((menuType) => {
+      const items =
+          menuType === "main"
+            ? navItems
+            : menuType === "users"
+            ? usersItems
+            : servicesItems;
       items.forEach((nav, index) => {
         if (nav.subItems) {
           nav.subItems.forEach((subItem) => {
             if (isActive(subItem.path)) {
               setOpenSubmenu({
-                type: menuType as "main" | "others",
+                type: menuType,
                 index,
-              });
+              });              
               submenuMatched = true;
             }
           });
@@ -156,7 +130,7 @@ const AppSidebar: React.FC = () => {
     }
   }, [openSubmenu]);
 
-  const handleSubmenuToggle = (index: number, menuType: "main" | "others") => {
+  const handleSubmenuToggle = (index: number, menuType: MenuType) => {
     setOpenSubmenu((prevOpenSubmenu) => {
       if (
         prevOpenSubmenu &&
@@ -169,7 +143,7 @@ const AppSidebar: React.FC = () => {
     });
   };
 
-  const renderMenuItems = (items: NavItem[], menuType: "main" | "others") => (
+  const renderMenuItems = (items: NavItem[], menuType: MenuType) => (
     <ul className="flex flex-col gap-4">
       {items.map((nav, index) => (
         <li key={nav.name}>
@@ -353,12 +327,26 @@ const AppSidebar: React.FC = () => {
                 }`}
               >
                 {isExpanded || isHovered || isMobileOpen ? (
-                  t('Menu')
+                  t('Main')
                 ) : (
                   <HorizontaLDots className="size-6" />
                 )}
               </h2>
               {renderMenuItems(navItems, "main")}
+            </div>
+            <div className="">
+              <h2
+                className={`mb-4 text-xs uppercase flex leading-[20px] text-gray-400 ${
+                  !isExpanded && !isHovered ? "lg:justify-center" : "justify-start"
+                }`}
+              >
+                {isExpanded || isHovered || isMobileOpen ? (
+                  t('Services')
+                ) : (
+                  <HorizontaLDots />
+                )}
+              </h2>
+              {renderMenuItems(servicesItems, "services")}
             </div>
             <div className="">
               <h2
@@ -369,12 +357,12 @@ const AppSidebar: React.FC = () => {
                 }`}
               >
                 {isExpanded || isHovered || isMobileOpen ? (
-                  t('Others')
+                  t('Users')
                 ) : (
                   <HorizontaLDots />
                 )}
               </h2>
-              {renderMenuItems(othersItems, "others")}
+              {renderMenuItems(usersItems, "users")}
             </div>
           </div>
         </nav>

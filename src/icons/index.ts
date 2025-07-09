@@ -4,6 +4,8 @@ import { ReactComponent as BoxIcon } from "./box.svg?react";
 import { ReactComponent as CheckCircleIcon } from "./check-circle.svg?react";
 import { ReactComponent as AlertIcon } from "./alert.svg?react";
 import { ReactComponent as InfoIcon } from "./info.svg?react";
+import { ReactComponent as CategoryIcon } from "./categories.svg?react";
+import { ReactComponent as HandymenIcon } from "./handymen.svg?react";
 import { ReactComponent as ErrorIcon } from "./info-error.svg?react";
 import { ReactComponent as BoltIcon } from "./bolt.svg?react";
 import { ReactComponent as ArrowUpIcon } from "./arrow-up.svg?react";
@@ -16,6 +18,7 @@ import { ReactComponent as FileIcon } from "./file.svg?react";
 import { ReactComponent as DownloadIcon } from "./download.svg?react";
 import { ReactComponent as ArrowRightIcon } from "./arrow-right.svg?react";
 import { ReactComponent as GroupIcon } from "./group.svg?react";
+import { ReactComponent as ServiceIcon } from "./services.svg?react";
 import { ReactComponent as BoxIconLine } from "./box-line.svg?react";
 import { ReactComponent as ShootingStarIcon } from "./shooting-star.svg?react";
 import { ReactComponent as DollarLineIcon } from "./dollar-line.svg?react";
@@ -38,6 +41,8 @@ import { ReactComponent as EyeIcon } from "./eye.svg?react";
 import { ReactComponent as EyeCloseIcon } from "./eye-close.svg?react";
 import { ReactComponent as TimeIcon } from "./time.svg?react";
 import { ReactComponent as CopyIcon } from "./copy.svg?react";
+import { ReactComponent as BookingIcon } from "./bookings.svg?react";
+import { ReactComponent as ClientIcon } from "./clients.svg?react";
 import { ReactComponent as ChevronLeftIcon } from "./chevron-left.svg?react";
 import { ReactComponent as UserCircleIcon } from "./user-circle.svg?react";
 import { ReactComponent as TaskIcon } from "./task-icon.svg?react";
@@ -62,15 +67,20 @@ export {
   DownloadIcon,
   FileIcon,
   GridIcon,
+  ServiceIcon,
+  CategoryIcon,
   AudioIcon,
   VideoIcon,
   BoltIcon,
   PlusIcon,
+  HandymenIcon,
+  BookingIcon,
   BoxIcon,
   CloseIcon,
   CheckCircleIcon,
   AlertIcon,
   InfoIcon,
+  ClientIcon,
   ErrorIcon,
   ArrowUpIcon,
   FolderIcon,

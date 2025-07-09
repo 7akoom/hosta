@@ -17,10 +17,15 @@
     "Notifications": "ئاگادارکردنەوەکان",
     "nav": {
         "Dashboard": "داشبۆرد",
+        "Bookings": "حجزکردن",
+        "Categories": "پۆلەکان",
+        "Services": "خزمەتگوزارییەکان",
         "Calendar": "ڕۆژژمێر",
         "UserProfile": "پڕۆفایلی بەکارهێنەر",
         "Users": "کڵایەنت",
         "Handymen": "کرێکاری لێهاتوو",
+        "Admins": "ئەدمینەکان",
+        "Orders": "فەرمانەکان",
         "Forms": "فۆرمەکان",
         "Tables": "خشتەکان",
         "Pages": "پەڕەکان",
@@ -44,7 +49,9 @@
         "Signup": "هەژمار دروستکردن",
         "SearchPlaceHolder": "...فەرمانی گەڕان یان نووسین"
     },
-    "Menu": "مێنیو",
+    "Main": "سەرەکی",
+    "Users": "بەکارهێنەران",
+    "Services": "خزمەتگوزارییەکان",
     "Dashboard": {
         "Customer": "کڵایەنت",
         "Providers": "دابینکەرەکان",
@@ -58,23 +65,46 @@
     "Breadcrumb": {
         "Home": "ماڵەوە",
         "ClientsPageTitle": "کڵایەنت",
-        "HandymenPageTitle": "پێشکەشکارانی خزمەتگوزاری"
+        "HandymenPageTitle": "پێشکەشکارانی خزمەتگوزاری",
+        "CategoriesPageTitle": "پۆلەکان",
+        "ServicesPageTitle": "خزمەتگوزارییەکان"
     },
     "Card": {
         "ClientsCardTitle": "لیستی کڵایەنت",
-        "HandymenCardTitle": "لیستی پێشکەشکارانی خزمەتگوزاری"
+        "HandymenCardTitle": "لیستی پێشکەشکارانی خزمەتگوزاری",
+        "CategoriesCardTitle": "لیستی پۆلەکان",
+        "ServicesCardTitle": "لیستی خزمەتگوزارییەکان"
     },
     "Table": {
         "Client": "کڵایەنت",
+        "Handyman": "دەستباز",
+        "Category": "جۆر",
+        "Service": "خزمەتگوزاری",
+        "Admin": "ئەدمین",
         "Info": "زانیاری",
+        "Role": "ئەرک",
         "Actions": "کردارەکان",
         "Block": "بلۆک",
+        "Statuses":{
+            "Blocked": "بلۆک کراوە",
+            "Active": "چالاک"
+        },
         "Activate": "چالاک بکە",
+        "Add": "زیادکردن",
         "Delete": "سڕینەوە",
         "Edit": "بژارکردن",
+        "Show": "نیشاندان",
         "Email": "ئیمەیڵ",
         "Phone": "تەلەفۆن",
+        "JoinDate": "بەرواری بەشداریکردن",
         "Address": "ناونیشان",
-        "Status": "دۆخ"
+        "Status": "دۆخ",
+        "BookingsCount": "حجزکردنەکان ژمارەیان هەیە",
+        "ServicesCount": "ژمارەی خزمەتگوزارییەکان"
+    },
+    "Categories":{
+        "Cleaning": "پاککردنەوە",
+        "Gardening": "باخداری",
+        "Painting": "وێنەکێشان"
     }
 }

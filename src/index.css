@@ -865,3 +865,11 @@ span.flatpickr-weekday,
   padding-right: 0 !important;
   padding-left: 0.25rem !important;
 }
+
+.font-amiri {
+  font-family: 'Amiri', Arial, Helvetica, sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}

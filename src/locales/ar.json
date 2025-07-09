@@ -17,10 +17,15 @@
     "Notifications": "الإشعارات",
     "nav": {
         "Dashboard": "لوحة التحكم",
+        "Bookings": "الحجوزات",
+        "Categories": "الفئات",
+        "Services": "الخدمات",
         "Calendar": "التقويم",
         "UserProfile": "الملف الشخصي",
         "Users": "العملاء",
         "Handymen": "مزودي الخدمات",
+        "Admins": "المدراء",
+        "Orders": "الطلبات",
         "Forms": "النماذج",
         "Tables": "الجداول",
         "Pages": "الصفحات",
@@ -44,8 +49,9 @@
         "Signup": "تسجيل الخروج",
         "SearchPlaceHolder": "ابحث أو اكتب الأمر..."
     },
-    "Menu": "القائمة",
-    "Others": "أخرى",
+    "Main": "الرئيسية",
+    "Users": "المستخدمين",
+    "Services": "الخدمات",
     "Dashboard": {
         "Customer": "العملاء",
         "Providers": "مزودي الخدمات",
@@ -59,23 +65,46 @@
     "Breadcrumb": {
         "Home": "الرئيسية",
         "ClientsPageTitle": "العملاء",
-        "HandymenPageTitle": "مزودي الخدمات"
+        "HandymenPageTitle": "مزودي الخدمات",
+        "CategoriesPageTitle": "الفئات",
+        "ServicesPageTitle": "الخدمات"
     },
     "Card": {
         "ClientsCardTitle": "قائمة العملاء",
-        "HandymenCardTitle": "قائمة مزودي الخدمات"
+        "HandymenCardTitle": "قائمة مزودي الخدمات",
+        "CategoriesCardTitle": "قائمة الفئات",
+        "ServicesCardTitle": "قائمة الخدمات"
     },
     "Table": {
         "Client": "العميل",
+        "Handyman": "مزود الخدمة",
+        "Category": "الفئة",
+        "Service": "الخدمة",
+        "Admin": "المدير",
         "Info": "المعلومات",
+        "Role": "الدور",
         "Actions": "العمليات",
         "Block": "حظر",
+        "Statuses":{
+            "Blocked": "محظور",
+            "Active": "نشط"
+        },
         "Activate": "تفعيل",
+        "Add": "إضافة",
         "Delete": "حذف",
         "Edit": "تعديل",
+        "Show": "عرض",
         "Email": "البريد الإلكتروني",
         "Phone": "رقم الهاتف",
+        "JoinDate": "تاريخ الانضمام",
         "Address": "العنوان",
-        "Status": "الحالة"
+        "Status": "الحالة",
+        "BookingsCount": "عدد الحجوزات",
+        "ServicesCount": "عدد الخدمات"
+    },
+    "Categories":{
+        "Cleaning": "تنظيف",
+        "Gardening": "البستنة",
+        "Painting": "دهان"
     }
 }
