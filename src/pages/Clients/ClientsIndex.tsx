@@ -4,7 +4,7 @@ import ComponentCard from "../../components/common/ComponentCard";
 import PageMeta from "../../components/common/PageMeta";
 import DynamicTable from "../../components/tables/DynamicTable";
 import Badge from "../../components/ui/badge/Badge";
-import {CloseLineIcon, TrashBinIcon, CheckLineIcon} from "../../icons";
+import {CloseLineIcon, TrashBinIcon, CheckLineIcon, EyeIcon} from "../../icons";
 import AddButton from "../UiElements/AddButton";
 
 interface Client {
@@ -182,6 +182,15 @@ export default function ClientsIndex() {
       accessor: "actions",
       render: (client: Client) => (
         <>
+          <button
+            className="mr-2 text-blue-500 hover:underline"
+            title={t('Table.Show')}
+            // onClick={() => {
+            //   alert(`Edit handyman ${handyman.handyman.name}`);
+            // }}
+          >
+            <EyeIcon className="fill-gray-500 dark:fill-gray-400"/>
+          </button>
           <button
             className="mr-4 text-red-500 hover:underline"
             onClick={() => {
